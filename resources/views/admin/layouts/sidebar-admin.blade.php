@@ -18,9 +18,7 @@
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider">
-
-
+    <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Customer -->
     <li class="nav-item active">
@@ -41,6 +39,16 @@
         <a class="nav-link" href="{{ route('orders.index') }}">
             <i class="fas fa-fw fa-shopping-cart"></i>
             <span>Pembelian</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav-Item - User-Management -->
+    <li class="nav-item active">
+        <a class="nav-link" href="{{ route('user-management.index') }}">
+            <i class="fas fa-fw fa-user-circle"></i>
+            <span>User Management</span></a>
     </li>
 
     <!-- Divider -->

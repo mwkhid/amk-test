@@ -29,7 +29,8 @@
                         <label for="customer_id">Customer</label>
                         <select name="customer_id" required class="form-control">
                             @foreach ($customers as $customer)
-                                <option value="{{ $customer->id }}">
+                                <option value="{{ $customer->id }}"
+                                    {{ $customer->id == $data->orders->customer_id ? 'selected' : '' }}>
                                     {{ $customer->name }}
                                 </option>
                             @endforeach
@@ -39,7 +40,7 @@
                         <label for="item_id">Item</label>
                         <select name="item_id" required class="form-control">
                             @foreach ($items as $item)
-                                <option value="{{ $item->id }}">
+                                <option value="{{ $item->id }}" {{ $item->id == $data->item_id ? 'selected' : '' }}>
                                     {{ $item->name }} - {{ $item->price }}
                                 </option>
                             @endforeach

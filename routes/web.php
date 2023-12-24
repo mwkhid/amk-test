@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CustomersController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ItemsController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\ProfileController;
@@ -50,6 +51,7 @@ Route::prefix('admin')
         Route::resource('customers', CustomersController::class);
         Route::resource('items', ItemsController::class);
         Route::resource('orders', OrdersController::class);
+        Route::resource('user-management', UserController::class);
     });
 
 

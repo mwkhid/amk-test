@@ -25,6 +25,7 @@
                     <div class="form-group">
                         <label for="customer_id">Customer</label>
                         <select name="customer_id" required class="form-control">
+                            <option value="" disabled selected>-- Pilih Customer --</option>
                             @foreach ($customers as $customer)
                                 <option value="{{ $customer->id }}">
                                     {{ $customer->name }}
@@ -35,6 +36,7 @@
                     <div class="form-group">
                         <label for="item_id">Item</label>
                         <select name="item_id" required class="form-control">
+                            <option value="" disabled selected>-- Pilih Item --</option>
                             @foreach ($items as $item)
                                 <option value="{{ $item->id }}">
                                     {{ $item->name }} - {{ $item->price }}
